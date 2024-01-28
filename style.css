@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  padding: 100px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #f3e5d8;
+}
+
+li {
+  margin-left: 20px;
+  text-indent: 10px;
+  line-height: 1.2;
+  color: #464543;
+}
+
+/* card */
+
+.card {
+  width: 50%;
+  padding: 30px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h1 {
+  margin: 20px 0;
+}
+
+.card p {
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #464543;
+}
+
+.card ul.first-list {
+  padding: 20px;
+  background-color: #fff7fc;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.card ul.first-list h3 {
+  color: #922f57;
+  margin-bottom: 15px;
+}
+
+.card ul.first-list li::marker {
+  color: #922f57;
+}
+
+.card ul.first-list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card ul.first-list li span {
+  font-weight: bold;
+}
+
+.card ul.second-list {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card ul.second-list h2,
+.card ol.third-list h2,
+.card ul.fourth-list h2 {
+  color: #7f4b33;
+  margin-bottom: 15px;
+}
+
+.card ul.second-list li,
+.card ol.third-list li{
+  margin-bottom: 15px;
+}
+
+.card ul.second-list li::marker,
+.card ol.third-list li::marker {
+  color: #7f4b33;
+}
+
+.card ol.third-list {
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card ol.third-list li span {
+  font-weight: bold;
+}
+
+.card ul.fourth-list {
+  padding-top: 20px;
+}
+
+.card ul.fourth-list p {
+  color: #464543;
+}
+
+.card ul.fourth-list li {
+  list-style: none;
+  margin-left: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card ul.fourth-list li:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card ul.fourth-list li span {
+  display: block;
+  color: #7f4b33;
+  font-weight: bold;
+  width: 200px;
+}
+
+/* mobile */
+
+@media screen and (max-device-width: 767px) {
+  body {
+    padding: 0 !important;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+      padding: 0 !important;
+    }
+  
+  .card {
+    width: 100%;
+  }
+}
